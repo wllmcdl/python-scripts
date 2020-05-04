@@ -1,9 +1,9 @@
 # Regex  
    
-##### Meta characters ( *need to be escaped* `\` )  
+##### Meta characters ( *need to be escaped* `\` )
 `.[{()\^$|?*+`  
    
-##### Snippets  
+##### Snippets
 `^` --- *Matches the beginning of a line*  
 `$` --- *Matches the end of a line*  
 `.` --- *Matches any character except new line*  
@@ -27,13 +27,13 @@
 `(?!...)` --- *Negative lookahead*  
 `(a|b)` ---	*Match either a or b*  
    
-##### Character Set  
+##### Character Set
 `[]` --- *matches characters in brackets*  
 `[^]` --- *matches characters not in brackets*  
 `|` --- *Or*  
 `()` --- *group*   
    
-##### Quantifiers  
+##### Quantifiers
 `?`     --- *zero or one as many times as possible, giving back as needed*  
 `*`     --- *Repeats a character zero or more times*  
 `+`     --- *Repeats a character one or more times*  
@@ -41,6 +41,6 @@
 `{m,}`  --- *range from m to infinite elements (a{3,} reads 3 or more of a)*  
 `{m,n}` --- *range from m to n elements (a{3,6} reads between 3 and 6 of a)*  
    
-##### Regex on Python  
+##### Regex on Python
 `re.search('regex', aString)` --- *Returns true/false depending on whether the string matches the regex*  
 `re.findall('regex', aString)` --- *Allow the matching string to be extracted returns a list*  
