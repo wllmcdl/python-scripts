@@ -4,8 +4,7 @@ Two types of serialization format (XML and JSON)
 
 XML
 
-XML stands for eXtensible Markup Language.
-
+XML stands for eXtensible Markup Language.\n
 XML was designed to store and transport data.
 
 XML was designed to be both human- and machine-readable.
