@@ -1,8 +1,8 @@
 # Regex  
    
 ##### Meta characters ( *need to be escaped* `\` )
-`.[{()\^$|?*+`  
-   
+`. [ { ( ) \ ^ $ | ? *`  
+
 ##### Snippets
 `^` --- *Matches the beginning of a line*  
 `$` --- *Matches the end of a line*  
