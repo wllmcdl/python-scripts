@@ -11,13 +11,13 @@ This program opens an url read it with urllib and then parse it using BeautifulS
 '''
 
 import urllib.request, urllib.parse, urllib.error
-from bs4 import BeautifulSoup as beautify
+from bs4 import BeautifulSoup
 import re
 
 # url = input("Enter url: ")
 url = 'http://py4e-data.dr-chuck.net/comments_483694.html'
 html = urllib.request.urlopen(url).read()
-soup = beautify(html, 'html.parser')
+soup = BeautifulSoup(html, 'html.parser')
 
 lst = list()
 count = 0
