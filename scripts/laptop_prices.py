@@ -24,8 +24,10 @@ soup = beautify(html, 'html.parser')
 
 cat = list()
 
-price = soup.find_all(attrs={"class": "w-currentPrice iss-current-price"})
-description = soup.find_all(attrs={"class": "w-product__title"})
+# price = soup.find_all(attrs={"class": "w-currentPrice iss-current-price"})
+price = soup.find_all('span', class_='w-currentPrice iss-current-price')
+# description = soup.find_all(attrs={"class": "w-product__title"})
+description = soup.find_all('h3', class_='w-product__title')
 
 descrip = re.findall(r'>(.+?)</h3>', str(description))
 prices = re.findall(r'class="w-product-price__main">([0-9]+?)<', str(price))
